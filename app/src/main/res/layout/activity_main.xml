@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050D14">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🎱"
+                android:textSize="36sp"
+                android:layout_marginEnd="12dp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AIM ASSIST"
+                    android:textColor="#00FFC8"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8 Ball Pool · v1.0"
+                    android:textColor="#336655"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Status -->
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="● Overlay OFF"
+            android:textColor="#00FFC8"
+            android:textSize="14sp"
+            android:background="#0D1E2C"
+            android:padding="14dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Main toggle button -->
+        <Button
+            android:id="@+id/btnToggle"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="START AIM ASSIST"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:letterSpacing="0.08"
+            android:background="#00FFC8"
+            android:layout_marginBottom="28dp"/>
+
+        <!-- Divider -->
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="#0D2030" android:layout_marginBottom="20dp"/>
+
+        <!-- Settings label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SETTINGS"
+            android:textColor="#336655"
+            android:textSize="11sp"
+            android:letterSpacing="0.12"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Line Color -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="LINE COLOR (hue)" android:textColor="#6FB8CC" android:textSize="12sp"
+            android:layout_marginBottom="6dp"/>
+        <SeekBar android:id="@+id/seekLineColor"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:max="360" android:progress="180"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Opacity -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="OPACITY" android:textColor="#6FB8CC" android:textSize="12sp"
+            android:layout_marginBottom="6dp"/>
+        <SeekBar android:id="@+id/seekOpacity"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:max="100" android:progress="80"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Length -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="LINE LENGTH" android:textColor="#6FB8CC" android:textSize="12sp"
+            android:layout_marginBottom="6dp"/>
+        <SeekBar android:id="@+id/seekLength"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:max="100" android:progress="70"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Wall Reflect -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical"
+            android:layout_marginBottom="28dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="WALL REFLECTION" android:textColor="#6FB8CC" android:textSize="12sp"/>
+            <Switch android:id="@+id/switchReflect"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:checked="true"/>
+        </LinearLayout>
+
+        <!-- How to use -->
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="#0D2030" android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HOW TO USE:\n\n1. Tap START AIM ASSIST\n2. Open 8 Ball Pool\n3. TAP on the cue ball\n4. DRAG your finger to aim\n5. Two-finger tap to reset ball\n\n⚠ Grant 'Draw over apps' permission when asked"
+            android:textColor="#4A7A8A"
+            android:textSize="12sp"
+            android:lineSpacingMultiplier="1.5"
+            android:background="#080F18"
+            android:padding="14dp"/>
+
+    </LinearLayout>
+</ScrollView>
